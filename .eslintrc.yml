@@ -1,17 +1,7 @@
-env:
-  browser: true
-  es6: true
-  jasmine: true
 extends: airbnb
-parser: babel-eslint
-parserOptions:
-  ecmaFeatures:
-    experimentalObjectRestSpread: true
-    jsx: true
-    impliedStrict: true
-  sourceType: module
+env:
+  jasmine: true
 plugins:
-  - react
   - flowtype
 rules:
   max-len:
@@ -26,7 +16,6 @@ rules:
     - capIsNewExceptions:
       - Immutable
 
-  #Flow:
   #require-parameter-type: warn
   #require-return-type: warn
   flowtype/space-after-type-colon: error

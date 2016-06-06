@@ -19,9 +19,9 @@ boilerplate project if you understand what all of the features listed below are,
   * Jasmine + karma + phantomJS
 
 ## Still to be added:
-  * redux-thunk? redux-saga?
+  * redux-saga
   * reselect
-  * react-router or react-router-redux?
+  * react-router & react-router-redux
 
 ## Also todo:
   * Add @flow to configureStore. Potentially waiting on: https://github.com/babel/eslint-plugin-babel/issues/55
