@@ -15,7 +15,7 @@ let render = () => {
 
   ReactDOM.render(
     <Provider store={store}>
-      <App/>
+      <App />
     </Provider>,
     reactRoot
   );
@@ -26,7 +26,7 @@ if (module.hot) {
   const renderError = error => {
     const RedBox = require('redbox-react'); // eslint-disable-line global-require
 
-    ReactDOM.render(<RedBox error={error}/>, reactRoot);
+    ReactDOM.render(<RedBox error={error} />, reactRoot);
   };
 
   render = () => {

@@ -5,8 +5,8 @@ import Immutable from 'seamless-immutable';
 const initialState = Immutable({});
 const exampleState = (state = initialState, action) => {
   switch (action) {
-  default:
-    return state;
+    default:
+      return state;
   }
 };
 
