@@ -9,7 +9,7 @@ const configureStore = initialState => {
 
   if (module.hot) {
     module.hot.accept('../reducers/root.js', () => {
-      const nextRootReducer = require('../reducers/root.js').default;
+      const nextRootReducer = require('../reducers/root.js').default; // eslint-disable-line global-require
 
       store.replaceReducer(nextRootReducer);
     });

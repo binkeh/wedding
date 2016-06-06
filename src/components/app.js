@@ -11,7 +11,7 @@ export const App = () => (
 
 App.propTypes = {
   dispatch: React.PropTypes.func,
-  exampleState: React.PropTypes.object
+  exampleState: React.PropTypes.object,
 };
 
 export default connect(state => state)(App);

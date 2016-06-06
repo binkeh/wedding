@@ -11,7 +11,7 @@ const store = configureStore();
 const reactRoot = document.getElementById('react-root');
 
 let render = () => {
-  const App = require('./components/app.js').default;
+  const App = require('./components/app.js').default; // eslint-disable-line global-require
 
   ReactDOM.render(
     <Provider store={store}>
@@ -24,7 +24,7 @@ let render = () => {
 if (module.hot) {
   const renderApp = render;
   const renderError = error => {
-    const RedBox = require('redbox-react');
+    const RedBox = require('redbox-react'); // eslint-disable-line global-require
 
     ReactDOM.render(<RedBox error={error}/>, reactRoot);
   };
