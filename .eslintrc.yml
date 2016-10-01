@@ -8,7 +8,7 @@ rules:
   react/forbid-prop-types: off
   max-len:
     - error
-    - 120
+    - 140
     - 2
   arrow-parens:
     - error
@@ -17,6 +17,7 @@ rules:
     - error
     - capIsNewExceptions:
       - Immutable
+      - Radium
 
   #require-parameter-type: warn
   #require-return-type: warn
