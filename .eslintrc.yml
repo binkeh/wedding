@@ -4,6 +4,8 @@ env:
 plugins:
   - flowtype
 rules:
+  react/jsx-filename-extension: off
+  react/forbid-prop-types: off
   max-len:
     - error
     - 120

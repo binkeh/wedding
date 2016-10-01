@@ -1,5 +1,5 @@
 // @flow
-/* global require module*/
+/* global require module document*/
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';

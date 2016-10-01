@@ -1,3 +1,6 @@
 [ignore]
 .*/dist/.*
 .*/node_modules/fbjs/.*
+
+[libs]
+decls/
