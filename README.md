@@ -16,9 +16,9 @@ boilerplate project if you understand what all of the features listed below are,
   * Source maps
   * eslint
   * Flow
-  * Jasmine + karma + phantomJS
 
 ## Still to be added:
+  * Jest + jsdom + enzyme
   * redux-saga
   * reselect
   * react-router & react-router-redux
