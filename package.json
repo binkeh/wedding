@@ -1,27 +1,26 @@
 {
-  "name": "spa-boilerplate",
+  "name": "wedding",
   "version": "0.0.1",
-  "description": "Boilerplate code to get a new single-page app up and running quickly.",
+  "description": "Wedding site: https://camandbianca.com",
   "main": "app.js",
   "scripts": {
     "build": "webpack",
     "flow": "flow; [[ $?=0||$?=2 ]]",
     "lint": "eslint src",
-    "start": "webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server --hot --inline --content-base public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/camjackson/spa-boilerplate.git"
+    "url": "git+https://github.com/camjackson/wedding.git"
   },
   "author": "Cam Jackson",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/camjackson/spa-boilerplate/issues"
-  },
-  "homepage": "https://github.com/camjackson/spa-boilerplate#readme",
+  "homepage": "https://camandbianca.com",
   "devDependencies": {
     "babel-core": "^6.16.0",
     "babel-loader": "^6.2.5",
+    "babel-plugin-transform-es2015-destructuring": "^6.16.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "eslint": "^3.7.0",

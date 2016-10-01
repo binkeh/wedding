@@ -21,7 +21,8 @@ module.exports = {
         exclude: /(node_modules|dist)/,
         loader: 'babel',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015'],
+          plugins: ['transform-object-rest-spread', 'transform-es2015-destructuring'],
         }
       }
     ]
