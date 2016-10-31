@@ -1,4 +1,3 @@
-// @flow
 /* global require module document*/
 import 'babel-polyfill';
 import React from 'react';

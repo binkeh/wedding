@@ -1,4 +1,3 @@
-// @flow
 import { combineReducers } from 'redux';
 import Immutable from 'seamless-immutable';
 

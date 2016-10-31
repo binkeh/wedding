@@ -1,8 +1,6 @@
 extends: airbnb
 env:
   jasmine: true
-plugins:
-  - flowtype
 rules:
   react/jsx-filename-extension: off
   react/forbid-prop-types: off
@@ -18,8 +16,3 @@ rules:
     - capIsNewExceptions:
       - Immutable
       - Radium
-
-  #require-parameter-type: warn
-  #require-return-type: warn
-  flowtype/space-after-type-colon: error
-  flowtype/space-before-type-colon: error
