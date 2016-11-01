@@ -1,4 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #163e3a;
+}
+
 section {
   text-align: center;
   padding-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 5px;
 }

@@ -17,7 +17,7 @@ const rsvpStyle = { ...linkStyle, color: 'white', backgroundColor: '#163e3a', pa
 const Nav = () => (
   <nav style={navStyle}>
     <a style={linkStyle} href="#home" key="Home">Home</a>
-    <a style={linkStyle} href="#ceremony" key="Ceremony">Wedding</a>
+    <a style={linkStyle} href="#ceremony" key="Ceremony">Ceremony</a>
     <a style={linkStyle} href="#getting-there" key="Getting There">Getting There</a>
     <a style={linkStyle} href="#gifts" key="Gifts">Gifts</a>
     <a style={rsvpStyle} href="#rsvp" key="RSVP">RSVP</a>

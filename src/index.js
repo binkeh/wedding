@@ -10,7 +10,7 @@ const store = configureStore();
 const reactRoot = document.getElementById('react-root');
 
 let render = () => {
-  const App = require('./components/app.js').default; // eslint-disable-line global-require
+  const App = require('./components/Home.js').default; // eslint-disable-line global-require
 
   ReactDOM.render(
     <Provider store={store}>
@@ -36,7 +36,7 @@ if (module.hot) {
     }
   };
 
-  module.hot.accept('./components/app.js', () => {
+  module.hot.accept('./components/Home.js', () => {
     render();
   });
 }
