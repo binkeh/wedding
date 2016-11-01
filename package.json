@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "webpack",
-    "deploy": "yarn run build && aws s3 cp dist/index.js s3://camandbianca.com --region ap-southeast-2",
+    "deploy": "yarn run build && ./deploy.sh",
     "lint": "eslint src --fix",
     "start": "webpack-dev-server --hot --inline --content-base public"
   },

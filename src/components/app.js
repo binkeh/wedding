@@ -1,16 +1,17 @@
 import React from 'react';
 import Radium from 'radium';
 
-import { backgroundColor } from '../styles';
 import Nav from './Nav';
 import BigImage from './BigImage';
-import MapPanel from './MapPanel';
+import GettingThere from './GettingThere';
+import Ceremony from './Ceremony';
 
 const App = () => (
-  <div style={{ backgroundColor }}>
+  <div>
     <Nav />
     <BigImage />
-    <MapPanel />
+    <Ceremony />
+    <GettingThere />
   </div>
 );
 
