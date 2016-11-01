@@ -10,9 +10,9 @@ const MapPanel = () => (
     <h1 style={{ ...center, textAlign: 'center', paddingTop: 20 }}>
       {"We'd love to see you there"}
     </h1>
-    <div style={{ display: 'flex', justifyContent: 'space-around', ...center, width: '85%' }}>
+    <div style={{ ...center, display: 'flex', justifyContent: 'space-around', width: '85%' }}>
       <span>
-        <iframe src={mapSrc} width="400" height="300" frameBorder="0" style={{ border: 0 }} allowFullScreen />
+        <iframe src={mapSrc} width="450" height="300" frameBorder="0" style={{ border: 0 }} allowFullScreen />
       </span>
       <span>
         <img height="300" src="/images/plantHouse.jpg" alt="plantHouse" />
