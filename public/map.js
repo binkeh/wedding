@@ -1,4 +1,4 @@
-const mapStyles = [
+var mapStyle = [
   {
     featureType: 'all',
     elementType: 'labels',
@@ -328,4 +328,25 @@ const mapStyles = [
   },
 ];
 
-export default mapStyles;
+function initMap() {
+  var styledMapType = new google.maps.StyledMapType(mapStyle, { name: 'Map' });
+  var position = { lat: 1.310247, lng: 103.817610 };
+  var map = new google.maps.Map(
+    document.getElementById('map'),
+    {
+      center: position,
+      zoom: 17,
+      mapTypeControlOptions: {
+        mapTypeIds: ['styled_map']
+      }
+    }
+  );
+  map.mapTypes.set('styled_map', styledMapType);
+  map.setMapTypeId('styled_map');
+
+  new google.maps.Marker({
+    position: position,
+    map: map,
+    title: 'The Plant House, Singapore Botanic Gardens'
+  });
+}

@@ -1,14 +1,22 @@
 import React from 'react';
 import AnchorTarget from './AnchorTarget';
 
-const mapSrc = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1973.7589458954621!2d103.81789335110999!3d1.310' +
-  '454991526201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1475308372917';
+const url = 'https://www.google.com/maps/d/u/1/edit?' +
+  'mid=11lwl2w_rt4KDeRHwi8QBW8inYfk&' +
+  'll=1.326246433625716%2C103.83079249999992&' +
+  'z=12';
 
 const MapPanel = () => (
   <section>
     <AnchorTarget id="getting-there" />
     <h1>Getting there</h1>
-    <iframe src={mapSrc} width="450" height="300" frameBorder="0" style={{ border: 0 }} allowFullScreen />
+    <div style={{ height: 500, width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
+      <div id="map" />
+    </div>
+    <p>
+      Check out our <a href={url}>customised map</a> for a more detailed map of our event locations,
+      as well as recommendations for food and sightseeing in Singapore.
+    </p>
   </section>
 );
 
