@@ -12,6 +12,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 5;
 }
 
 nav a {
@@ -72,4 +73,20 @@ span.anchor-target {
   visibility: hidden;
   position: relative;
   top: -54px;
+}
+
+form {
+  margin-bottom: 500px;
+}
+
+fieldset {
+  border: 0;
+}
+
+form label {
+  display: block;
+}
+
+form label span {
+  width: 100px;
 }

@@ -16,3 +16,4 @@ rules:
     - capIsNewExceptions:
       - Immutable
       - Radium
+  jsx-a11y/label-has-for: off
