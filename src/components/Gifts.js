@@ -3,6 +3,7 @@ import AnchorTarget from './AnchorTarget';
 
 const Gifts = () => (
   <section>
+    <img className="flower" src="/flower-purple.png" alt="Purple flower" />
     <AnchorTarget id="gifts" />
     <h1>Gifts</h1>
     <p style={{ height: 500 }}>

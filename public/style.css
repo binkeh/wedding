@@ -34,7 +34,8 @@ nav a:hover {
 
 section {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 section:nth-child(odd) {
@@ -58,6 +59,12 @@ h1 {
 
 #map {
   height: 100%;
+}
+
+img.flower {
+  width: 120px;
+  mix-blend-mode: multiply;
+  padding-top: 20px;
 }
 
 span.anchor-target {

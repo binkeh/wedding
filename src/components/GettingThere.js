@@ -8,6 +8,7 @@ const url = 'https://www.google.com/maps/d/u/1/edit?' +
 
 const MapPanel = () => (
   <section>
+    <img className="flower" src="/flower-orange.png" alt="Orange flower" />
     <AnchorTarget id="getting-there" />
     <h1>Getting there</h1>
     <div style={{ height: 500, width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
