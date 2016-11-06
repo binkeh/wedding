@@ -4,9 +4,49 @@ body {
   color: #163e3a;
 }
 
+nav {
+  height: 55px;
+  width: 100%;
+  background-color: #F4C0AF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+nav a {
+  color: #163E3A;
+  flex: 0 1 150px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav a#rsvp-nav {
+  color: white;
+  background-color: #163E3A;
+  padding: 10px 0;
+}
+
+nav a:hover {
+  color: white
+}
+
 section {
   text-align: center;
   padding-bottom: 20px;
+}
+
+section:nth-child(odd) {
+  background-color: #F4C0AF;
+}
+
+section:nth-child(even) {
+  background-color: white;
+}
+
+section#big-image {
+  padding-top: 55px;
 }
 
 h1 {
@@ -18,4 +58,11 @@ h1 {
 
 #map {
   height: 100%;
+}
+
+span.anchor-target {
+  display: block;
+  visibility: hidden;
+  position: relative;
+  top: -54px;
 }

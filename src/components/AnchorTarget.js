@@ -1,14 +1,6 @@
 import React from 'react';
-import { navHeight } from '../styles';
 
-const style = {
-  display: 'block',
-  visibility: 'hidden',
-  position: 'relative',
-  top: -navHeight - 10,
-};
-
-const AnchorTarget = ({ id }) => <span id={id} style={style} />;
+const AnchorTarget = ({ id }) => <span id={id} className="anchor-target" />;
 
 AnchorTarget.propTypes = {
   id: React.PropTypes.string.isRequired,
