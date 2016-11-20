@@ -1,34 +1,41 @@
 import React from 'react';
 import AnchorTarget from './AnchorTarget';
 
-// Name
-// Yes/no
-// Dietary reqs.
-
 const RSVP = () => (
   <section>
     <img className="flower" src="/flower-pink.png" alt="Pink flower" />
     <AnchorTarget id="rsvp" />
     <h1>RSVP</h1>
     <form action="">
-      <label>
-        <span>Name:</span>
-        <input type="text" name="name" />
-      </label>
-      <span>Will you be joining us?</span>
-      <label>
-        <span>{"Yes, I'll be there!"}</span>
-        <input type="radio" name="rsvp" value="yes" />
-      </label>
-      <label>
-        <span>{"Sorry, I can't make it"}</span>
-        <input type="radio" name="rsvp" value="no" />
-      </label>
-      <label htmlFor="">
-        <span>Dietary requirements:</span>
-        <textarea />
-      </label>
-      <input type="submit" />
+      <fieldset>
+        <label>
+          <div>Name(s):</div>
+          <input type="text" name="names" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>Will you be joining us?</label>
+        <label>
+          <input type="radio" name="rsvp" value="yes" />
+          {"Yes, I'll be there!"}
+        </label>
+        <label>
+          <input type="radio" name="rsvp" value="no" />
+          {"Sorry, I can't make it"}
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <div>Any dietary requirements?</div>
+          <textarea name="diet" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <input type="submit" />
+      </fieldset>
     </form>
   </section>
 );
