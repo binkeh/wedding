@@ -79,7 +79,7 @@ span.anchor-target {
 form {
   padding: 20px;
   margin: 0 auto 185px;
-  width: 365px;
+  width: 400px;
   border: 2px solid #163E3A;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -134,5 +134,5 @@ input[type=submit] {
 }
 
 fieldset > label:first-child {
-  font-weight: bold;
+  font-weight: 600;
 }
